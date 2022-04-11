@@ -1,0 +1,22 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: 1fr 6fr 0.5fr;
+    height: 100vh;
+}
+
+header {
+    grid-row: 1 / 2;
+}
+
+main {
+    grid-row: 2 / 3;
+}
+
+footer {
+    grid-row: 3 / 4;
+}
