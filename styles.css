@@ -13,7 +13,7 @@ body {
 
 .container {
     display: grid;
-    grid-template-rows: 1fr 6fr 0.5fr;
+    grid-template-rows: auto 1fr auto;
     height: 100vh;
 }
 
@@ -22,6 +22,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    box-shadow: 0px 5px 5px rgb(0 0 0 / 0.5);
 }
 
 header > p {
@@ -36,16 +37,24 @@ main {
     grid-row: 2 / 3;
     display: flex;
     justify-content: center;
+    padding: 20px 10px;
 }
 
 footer {
     grid-row: 3 / 4;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0px -5px 5px rgb(0 0 0 / 0.5);
+    padding: 20px;
 }
 
+a, a:visited {
+    color: var(--accent-color);
+}
 .game_container {
     flex-basis: 1000px;
     display: grid;
-    grid-template-rows: 1fr 1fr 5fr 1fr;
+    grid-template-rows: auto 0.2fr 1fr auto;
     border-style: solid;
     height: 100%;
     box-sizing: border-box;
@@ -103,7 +112,7 @@ footer {
 }
 
 .players_turn {
-    font-size: 2rem !important;
+    color: var(--accent-color) !important;
     font-weight: bold;
 }
 
