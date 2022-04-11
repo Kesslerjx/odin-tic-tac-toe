@@ -1,7 +1,7 @@
 :root {
     --main-green: #10b981;
     --darkest-green: #000403;
-    --accent-color: #FF6416;
+    --accent-color: #FFE616;
 }
 
 body {
@@ -73,7 +73,7 @@ footer {
     font-weight: bold;
     font-size: 1.5rem;
     letter-spacing: 0.25rem;
-    color: white;
+    color: var(--darkest-green);
 }
 
 #play_button:hover {
