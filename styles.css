@@ -1,6 +1,14 @@
+:root {
+    --main-green: #10b981;
+    --darkest-green: #000403;
+    --accent-color: #FF6416;
+}
+
 body {
     margin: 0;
     padding: 0;
+    font-family: 'Ubuntu', sans-serif;
+    background-color: var(--main-green);
 }
 
 .container {
@@ -11,12 +19,54 @@ body {
 
 header {
     grid-row: 1 / 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header > p {
+    font-size: 3rem;
+    letter-spacing: 1rem;
+    font-weight: bold;
+    color: var(--darkest-green);
+    text-align: center;
 }
 
 main {
     grid-row: 2 / 3;
+    display: flex;
+    justify-content: center;
 }
 
 footer {
     grid-row: 3 / 4;
+}
+
+.game_container {
+    flex-basis: 1000px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 5fr 1fr;
+    border-style: solid;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.controls {
+    grid-row: 1 / 2;
+    border-style: solid;
+}
+
+.players {
+    grid-row: 2 / 3;
+    border-style: solid;
+}
+
+.gameboard {
+    grid-row: 3 / 4;
+    border-style: solid;
+}
+
+.information {
+    grid-row: 4 / 5;
+    border-style: solid;
 }
