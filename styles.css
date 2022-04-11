@@ -54,19 +54,97 @@ footer {
 .controls {
     grid-row: 1 / 2;
     border-style: solid;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    gap: 10px;
+}
+
+.controls input {
+    flex: 30%;
+    font-size: 1.2rem;
+    border-style: none;
+    border-radius: 10px;
+    padding: 5px 5px;
+}
+
+#play_button {
+    background-color: var(--accent-color);
+    font-weight: bold;
+    font-size: 1.5rem;
+    letter-spacing: 0.25rem;
+    color: white;
+}
+
+#play_button:hover {
+    box-shadow: 0px 0px 5px rgb(0 0 0 / 0.5);
+}
+
+#play_button:active {
+    box-shadow: inset 0px 0px 5px rgb(0 0 0 / 0.5);
 }
 
 .players {
     grid-row: 2 / 3;
     border-style: solid;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    gap: 10px;
+    align-items: center;
+
+}
+
+.players div {
+    flex: 1;
+    text-align: center;
+    color: var(--darkest-green);
+    font-size: 1.2rem;
+}
+
+.players_turn {
+    font-size: 2rem !important;
+    font-weight: bold;
 }
 
 .gameboard {
     grid-row: 3 / 4;
     border-style: solid;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    padding: 20px;
+}
+
+.gameboard_box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+}
+
+.center_box_tb {
+    border-left: solid;
+    border-right: solid;
+}
+
+.center_box {
+    border-style: solid;
+}
+
+.side_box_center {
+    border-top: solid;
+    border-bottom: solid;
 }
 
 .information {
     grid-row: 4 / 5;
     border-style: solid;
+    display: flex;
+}
+
+.information div {
+    flex: 30%;
+    align-self: center;
+    text-align: center;
 }

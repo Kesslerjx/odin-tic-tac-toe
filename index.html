@@ -20,10 +20,40 @@
         </header>
         <main>
             <div class="game_container">
-                <div class="controls"></div>
-                <div class="players"></div>
-                <div class="gameboard"></div>
-                <div class="information"></div>
+                <div class="controls">
+                    <input type="text" name="player_one_name" id="player_one_name" placeholder="Player one name...">
+                    <input type="text" name="player_two_name" id="player_two_name" placeholder="Player two name...">
+                    <input type="button" id="play_button" value="Play">
+                </div>
+                <div class="players">
+                    <div id="player_one">Name one</div>
+                    <div id="player_two">Name two</div>
+                </div>
+                <div class="gameboard">
+                    <div id="box_0" class="gameboard_box">x</div>
+                    <div id="box_1" class="center_box_tb gameboard_box">o</div>
+                    <div id="box_2" class="gameboard_box">x</div>
+                    <div id="box_3" class="side_box_center gameboard_box">o</div>
+                    <div id="box_4" class="center_box gameboard_box">x</div>
+                    <div id="box_5" class="side_box_center gameboard_box">o</div>
+                    <div id="box_6" class="gameboard_box">x</div>
+                    <div id="box_7" class="center_box_tb gameboard_box">o</div>
+                    <div id="box_8" class="gameboard_box">x</div>
+                </div>
+                <div class="information">
+                    <div>
+                        <p>Games Played</p>
+                        <p id="games_played">0</p>
+                    </div>
+                    <div>
+                        <p>Player One</p>
+                        <p id="player_one_wins">0</p>
+                    </div>
+                    <div>
+                        <p>Player Two</p>
+                        <p id="player_two_wins">0</p>
+                    </div>
+                </div>
             </div>
         </main>
         <footer></footer>
